@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="todolist.css">
+    <script src="todolist.js" defer></script>
+    <title>To do list</title>
+    <script src="todolist.js" defer></script>
+</head>
+<body>
+    <div class="contentbox">
+        <div class="heading">
+            <h1>To-do list</h1>
+        </div>
+        <div class="sections">
+            <button id="section-buttona">All tasks</button>
+            <button id="section-buttonb">Pending</button>
+            <button id="section-buttonc">finished</button>
+        </div>
+        <div class="tasklist">
+            <ul id="todo-list">
+                 
+            </ul>
+        </div>
+        
+        <div class="addtask">
+            <button id="newtaskbutton">add new task</button>
+            
+        </div>
+        <div id="modalbox">
+            
+            <button id="closebutton"><i class="fa-solid fa-circle-xmark"></i></button>
+            <form id="form">
+                <input id="inputtask" type="text" placeholder="enter your task here" required>
+                <input type="date" id="inputdate" min="">
+                <textarea rows="10" cols="10" id="inputcomment"></textarea>
+                <button id="addbutton" type="submit">add</button>
+            </form>
+        </div>
+
+    </div>
+</body>
+</html>
